@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get 'sample/index'
 
   get 'samp/index'
+  get 'samp/hello'
+  get 'samp/hello2'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
