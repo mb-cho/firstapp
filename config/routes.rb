@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sample/index'
+
   get 'samp/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
