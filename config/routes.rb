@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   get 'sample/index'
+  get 'sample/helo'
+  post 'sample/index'
 
   get 'samp/index'
   get 'samp/hello'
