@@ -4,13 +4,16 @@
   <head>
 	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	  <title><%= @title %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 
+  							'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 
+  							'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 	  <%= yield :head %>
   </head>
   <body>
-  <%= render :partial => 'layouts/partials/myheader',
-  	  :locals => {:title =>"ヘッダ"} %>
+  <%= render :template => 'layouts/myheader' %>
   <%= yield %>
-  <%= render 'layouts/partials/myfooter' %>
+  <%= render :template => 'layouts/myfooter' %>
   </body>
 </html>
