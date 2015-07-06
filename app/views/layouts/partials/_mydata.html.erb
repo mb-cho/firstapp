@@ -1,7 +1,10 @@
 
 <tr>
 	<td>
-	<%= mydata.id%>
+		<a href="show?id=<%=mydata.id %>">
+			<%=mydata.id %>
+		</a>
+	
 	</td>
 	
 	<td>
@@ -16,4 +19,16 @@
 	<td>
 	<%= mydata.mail%>
 	</td>
+	<td>			
+		<span class="bt_delete" value="<%=mydata.id %>">
+			Delete
+		</span>
+	</td>
+	
+	<td>			
+		<span class="bt_update" value="<%=mydata.id %>">
+			update
+		</span>
+	</td>
+	
 </tr>

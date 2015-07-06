@@ -3,6 +3,13 @@ Rails.application.routes.draw do
   get 'sample/helo'
   post 'sample/index'
   
+  get 'sample/show'
+  
+  get 'sample/delete'
+  
+  get 'sample/update'
+  post 'sample/update'
+    
   get 'sample/data_table'
   post 'sample/data_table'
   
