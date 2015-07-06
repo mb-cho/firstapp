@@ -5,6 +5,16 @@ class SampleController < ApplicationController
   layout 'mylayout'
   
   def index
+    if request.post? then
+      obj = Sample.new(
+        :name => params['name'],
+        :age =>  params['age'],
+        :mail => params['mail'],
+        :tel =>  params['tel']
+      )
+      obj.save
+    end
+     
     @title = "index Page"
     @datas=Sample.all
       

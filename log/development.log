@@ -5974,3 +5974,89 @@ Started GET "/assets/sample.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde4
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-06 13:41:03 +0900
+
+
+Started GET "/sample/index" for ::1 at 2015-07-06 16:41:17 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (4.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (C:/aoki_sigoto/rails_work/firstapp/app/controllers/sample_controller.rb:37: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/sample_controller.rb:37: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (32.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (116.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (48.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (132.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-06 16:41:49 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (4.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (24.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 1521ms (Views: 1504.6ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/sample.self-00ceda1a85a5b4c5113296283ae64c39be22fa319cbd70c102efe7da8ee8cab1.css?body=1" for ::1 at 2015-07-06 16:41:51 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-06 16:41:51 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-06 16:41:51 +0900
+
+
+Started GET "/assets/samp.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-06 16:41:51 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-06 16:41:51 +0900
+
+
+Started GET "/assets/samp.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-06 16:41:51 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-06 16:41:51 +0900
+
+
+Started GET "/assets/sample.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-06 16:41:51 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-06 16:41:51 +0900
+
+
+Started POST "/sample/index" for ::1 at 2015-07-06 16:42:07 +0900
+Processing by SampleController#index as HTML
+  Parameters: {"name"=>"taro", "age"=>"22", "mail"=>"aas@kks", "tel"=>"23394948"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (16.0ms)[0m  INSERT INTO "samples" ("name", "age", "mail", "tel", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "taro"], ["age", 22], ["mail", "aas@kks"], ["tel", "23394948"], ["created_at", "2015-07-06 07:42:07.251130"], ["updated_at", "2015-07-06 07:42:07.251130"]]
+  [1m[36m (84.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (8.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 516ms (Views: 300.0ms | ActiveRecord: 100.0ms)
+
+
+Started POST "/sample/index" for ::1 at 2015-07-06 16:42:20 +0900
+Processing by SampleController#index as HTML
+  Parameters: {"name"=>"hanako", "age"=>"21", "mail"=>"", "tel"=>""}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "samples" ("name", "age", "mail", "tel", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "hanako"], ["age", 21], ["mail", ""], ["tel", ""], ["created_at", "2015-07-06 07:42:20.921416"], ["updated_at", "2015-07-06 07:42:20.921416"]]
+  [1m[36m (408.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (12.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 629ms (Views: 212.0ms | ActiveRecord: 412.0ms)
