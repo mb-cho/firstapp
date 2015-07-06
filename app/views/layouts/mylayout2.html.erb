@@ -10,15 +10,18 @@
 	  <%= yield :head %>
   </head>
   <body>
+  	
   <%= render :partial => 'layouts/partials/myheader',
   	  :locals => {:title =>"ヘッダ"} %>
   <%= yield %>
   <table border="1">
   	<tr>
   		<th width="50px">No.</th>
-  		<th>Data</th>
+  		<th>Name</th>
+  		<th>Tel</th>
+  		<th>Mail</th>
   	</tr>
-  	<%= render :partial => 'layouts/partials/mydata',:collection => param_datas %>
+  	<%= render :partial => 'layouts/partials/mydata2',:collection => datas %>
   </table>
   <%= render 'layouts/partials/myfooter' %>
   </body>

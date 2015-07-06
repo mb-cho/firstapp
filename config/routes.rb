@@ -2,7 +2,10 @@ Rails.application.routes.draw do
   get 'sample/index'
   get 'sample/helo'
   post 'sample/index'
-
+  
+  get 'sample/data_table'
+  post 'sample/data_table'
+  
   get 'samp/index'
   get 'samp/hello'
   get 'samp/hello2'
