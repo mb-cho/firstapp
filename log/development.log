@@ -5803,3 +5803,174 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-06 13:25:29 +0900
+
+
+Started GET "/sample/index" for ::1 at 2015-07-06 13:36:43 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (8.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 364ms (Views: 364.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sample.self-a0ffbf3ebf2db3b0f7328971166a1856e7cf294b0b7c977c706f0769e8c7a5f8.css?body=1" for ::1 at 2015-07-06 13:36:44 +0900
+
+
+Started GET "/sample/index" for ::1 at 2015-07-06 13:37:02 +0900
+Processing by SampleController#index as HTML
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT "samples".* FROM "samples"[0m
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (4.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 116ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-06 13:38:32 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (12.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 604ms (Views: 600.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/samp.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-06 13:38:33 +0900
+
+
+Started GET "/assets/sample.self-f2e466b9ed2595a83cd65c3af86255292cd19bf89327e869bd47fd83a2c7da91.css?body=1" for ::1 at 2015-07-06 13:38:33 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-06 13:38:33 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-06 13:38:33 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-06 13:38:33 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-06 13:38:33 +0900
+
+
+Started GET "/assets/samp.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-06 13:38:33 +0900
+
+
+Started GET "/assets/sample.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-06 13:38:33 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-06 13:38:33 +0900
+
+
+Started GET "/sample/index" for ::1 at 2015-07-06 13:40:00 +0900
+Processing by SampleController#index as HTML
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT "samples".* FROM "samples"[0m
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (8.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 388ms (Views: 388.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-06 13:40:00 +0900
+
+
+Started GET "/assets/samp.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-06 13:40:00 +0900
+
+
+Started GET "/assets/sample.self-92fb7a3c47660d199d4c016f8d53fff695db3134ceb04a45a47c1ceb97de6204.css?body=1" for ::1 at 2015-07-06 13:40:00 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-06 13:40:00 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-06 13:40:00 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-06 13:40:00 +0900
+
+
+Started GET "/assets/samp.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-06 13:40:00 +0900
+
+
+Started GET "/assets/sample.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-06 13:40:00 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-06 13:40:00 +0900
+
+
+Started GET "/sample/index" for ::1 at 2015-07-06 13:40:47 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (8.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 421ms (Views: 416.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/samp.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-06 13:40:47 +0900
+
+
+Started GET "/assets/sample.self-c3a1fd0ae3bdce2a2afd42affefab5818d2815ad53dfd578a726273d8948f84d.css?body=1" for ::1 at 2015-07-06 13:40:47 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-06 13:40:47 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-06 13:40:47 +0900
+
+
+Started GET "/assets/samp.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-06 13:40:47 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-06 13:40:48 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-06 13:40:48 +0900
+
+
+Started GET "/assets/sample.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-06 13:40:48 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-06 13:40:48 +0900
+
+
+Started GET "/sample/index" for ::1 at 2015-07-06 13:41:03 +0900
+Processing by SampleController#index as HTML
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT "samples".* FROM "samples"[0m
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (12.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 452ms (Views: 452.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-06 13:41:03 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-06 13:41:03 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-06 13:41:03 +0900
+
+
+Started GET "/assets/samp.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-06 13:41:03 +0900
+
+
+Started GET "/assets/sample.self-00ceda1a85a5b4c5113296283ae64c39be22fa319cbd70c102efe7da8ee8cab1.css?body=1" for ::1 at 2015-07-06 13:41:03 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-06 13:41:03 +0900
+
+
+Started GET "/assets/samp.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-06 13:41:03 +0900
+
+
+Started GET "/assets/sample.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-06 13:41:03 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-06 13:41:03 +0900

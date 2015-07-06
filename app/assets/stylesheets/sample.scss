@@ -1,6 +1,8 @@
 // Place all the styles related to the sample controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
 h1{
   background-color:#aaaaff;
   padding: 5px;
@@ -16,14 +18,16 @@ p.footer{
   font-size:9pt;
   color:#6666aa; 
 }
+
+
 table tr th{
-  background-colo:#333333;
+  background-color:#333333;
   color:#FFFFFF;
   padding:5px;
   margin:5px;
 }
-table th td{
-  background-colo:#DDDDDD;
+table tr td{
+  background-color:#dddddd;
   color:#000066;
   padding:5px;
   margin:5px;
