@@ -26,18 +26,15 @@ class SampleController < ApplicationController
   end
   
   def update
+    @result = Sample.find(params[:id])
     if request.post? then
-      @title = "Update Id  Post= " 
-      #@result.name = params['name']
-      #@result.age = params['age'].to_i
-      #@result.tel = params['tel']
-      #@result.mail = params['mail']
-      #@result.save
-      #redirect_to :action => "index"
-      #@result = Sample.find(params[:id])
-      @title = "Update Id POst= " 
+      @result.name = params['name']
+      @result.age = params['age'].to_i
+      @result.tel = params['tel']
+      @result.mail = params['mail']
+      @result.save
+      redirect_to :action => "index"
     else
-      @result = Sample.find(params[:id])
       @title = "Update Id = " 
     end
   end

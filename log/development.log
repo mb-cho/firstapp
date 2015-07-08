@@ -10434,3 +10434,634 @@ ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticit
   Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
   Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
   Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (124.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 00:57:38 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (4.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (4.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (8.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 132ms (Views: 124.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/sample/update?id=3" for ::1 at 2015-07-07 00:57:41 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT  "samples".* FROM "samples" WHERE "samples"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered sample/update.html.erb within layouts/mylayout (0.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 144ms (Views: 144.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sample/" for ::1 at 2015-07-07 00:57:42 +0900
+
+ActionController::RoutingError (No route matches [POST] "/sample"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (52.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (112.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 00:58:12 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (4.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 133ms (Views: 133.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sample/update?id=3" for ::1 at 2015-07-07 00:58:15 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT  "samples".* FROM "samples" WHERE "samples"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered sample/update.html.erb within layouts/mylayout (0.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 148ms (Views: 148.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sample/update" for ::1 at 2015-07-07 00:58:40 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"id"=>"3", "name"=>"hanako", "age"=>"21", "mail"=>"aaa", "tel"=>""}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 4ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:145:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:145:in `block in halting_and_conditional'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.2) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.2) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.2) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (56.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (116.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 01:02:57 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (4.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 137ms (Views: 133.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sample/update?id=6" for ::1 at 2015-07-07 01:02:59 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT  "samples".* FROM "samples" WHERE "samples"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered sample/update.html.erb within layouts/mylayout (0.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 140ms (Views: 136.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sample/update" for ::1 at 2015-07-07 01:03:04 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3hWwZ6e6wF6o7WXrEBpd6Vv23Bzapz9QKO8be7CFH2Iuez9SiNL8WENMPxlpefvvRPKThCeJwSkCJGRQskqETA==", "id"=>"6", "name"=>"hanako", "age"=>"21", "mail"=>"ass", "tel"=>""}
+  Rendered sample/update.html.erb within layouts/mylayout (4.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    3: 	<table>
+    4: 		<tr>
+    5: 			<th>ID:</th>
+    6: 			<td><%=@result.id %><input type="hidden" name="id" value="<%= @result.id %>"/></td>
+    7: 		</tr>
+    8: 		<tr>
+    9: 			<th>Name:</th>
+  app/views/sample/update.html.erb:6:in `_app_views_sample_update_html_erb___196522942_98962320'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (64.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (156.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 01:03:53 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (4.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (8.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 144ms (Views: 144.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sample/update?id=3" for ::1 at 2015-07-07 01:03:56 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT  "samples".* FROM "samples" WHERE "samples"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered sample/update.html.erb within layouts/mylayout (4.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 129ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sample/update" for ::1 at 2015-07-07 01:04:00 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q2JihbTP868F/LXHDlRuLe4rKPEfyQ+Mb2z4SGcR2QVbDO2wm6fPqe5d7zV3N8gr8S9naeLn8fVFp4djZd5CKw==", "id"=>"3", "name"=>"hanako", "age"=>"21", "mail"=>"as", "tel"=>""}
+  Rendered sample/update.html.erb within layouts/mylayout (4.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    3: 	<table>
+    4: 		<tr>
+    5: 			<th>ID:</th>
+    6: 			<td><%=@result.id %>
+    7: 				<input type="hidden" name="id" value="<%= @result.id %>"/>
+    8: 			</td>
+    9: 		</tr>
+  app/views/sample/update.html.erb:6:in `_app_views_sample_update_html_erb___196522942_92786180'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (56.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (136.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 01:04:26 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (4.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (8.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 164ms (Views: 160.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sample/update?id=6" for ::1 at 2015-07-07 01:04:28 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT  "samples".* FROM "samples" WHERE "samples"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered sample/update.html.erb within layouts/mylayout (0.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 148ms (Views: 148.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 01:05:28 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (4.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (16.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 160ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sample/update?id=6" for ::1 at 2015-07-07 01:05:32 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT  "samples".* FROM "samples" WHERE "samples"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered sample/update.html.erb within layouts/mylayout (4.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 160ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sample/update" for ::1 at 2015-07-07 01:05:36 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mwpnIU5croAaC3qB51W8Xrhr8wz2vO2YwuF8hcDluLVrZOgUYTSShvGqIHOeNhpYp2+8lAuSE+HoKgOuwiojmw==", "id"=>"6", "name"=>"hanako", "age"=>"21", "mail"=>"ass", "tel"=>""}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `name=' for nil:NilClass):
+  app/controllers/sample_controller.rb:30:in `update'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (48.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (116.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 01:06:46 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (12.0ms)
+  Rendered layouts/partials/_myheader.html.erb (4.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 160ms (Views: 152.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sample/update?id=6" for ::1 at 2015-07-07 01:06:48 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT  "samples".* FROM "samples" WHERE "samples"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered sample/update.html.erb within layouts/mylayout (0.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 126ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sample/update" for ::1 at 2015-07-07 01:06:52 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tnJ/v9FtkgBGxGbTKvh9qw+rU/0+twPPVmNb8wz/MYVGHPCK/gWuBq1lPCFTm9utEK8cZcOZ/bZ8qCTYDjCqqw==", "id"=>"6", "name"=>"hanako", "age"=>"21", "mail"=>"as", "tel"=>""}
+  [1m[35mSample Load (0.0ms)[0m  SELECT  "samples".* FROM "samples" WHERE "samples"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE "samples" SET "mail" = ?, "updated_at" = ? WHERE "samples"."id" = ?  [["mail", "as"], ["updated_at", "2015-07-06 16:06:52.068135"], ["id", 6]]
+  [1m[36m (140.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/sample/index
+Completed 302 Found in 276ms (ActiveRecord: 140.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 01:06:52 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (4.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (12.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 172ms (Views: 168.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sample/update?id=3" for ::1 at 2015-07-07 01:06:57 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT  "samples".* FROM "samples" WHERE "samples"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered sample/update.html.erb within layouts/mylayout (4.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 164ms (Views: 164.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sample/update" for ::1 at 2015-07-07 01:07:05 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0nwgbfJ82gQrdimm9JtRNlT3sJWODHtRPPhO9buRgNgiEq9Y3RTmAsDXc1SN+PcwS/P/DXMihSgWMzHeuV4b9g==", "id"=>"3", "name"=>"hanako", "age"=>"21", "mail"=>"aaa@sd.ff", "tel"=>""}
+  [1m[35mSample Load (1.1ms)[0m  SELECT  "samples".* FROM "samples" WHERE "samples"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE "samples" SET "mail" = ?, "updated_at" = ? WHERE "samples"."id" = ?  [["mail", "aaa@sd.ff"], ["updated_at", "2015-07-06 16:07:05.080593"], ["id", 3]]
+  [1m[36m (196.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/sample/index
+Completed 302 Found in 214ms (ActiveRecord: 197.1ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 01:07:05 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples"
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (4.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 212ms (Views: 212.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 01:07:58 +0900
+Processing by SampleController#index as HTML
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT "samples".* FROM "samples"[0m
+  Rendered layouts/partials/_mydata.html.erb (4.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (16.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 216ms (Views: 212.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/samp.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-07 01:07:59 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-07 01:07:59 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 01:07:59 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 01:07:59 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-07 01:07:59 +0900
+
+
+Started GET "/assets/sample.self-00ceda1a85a5b4c5113296283ae64c39be22fa319cbd70c102efe7da8ee8cab1.css?body=1" for ::1 at 2015-07-07 01:07:59 +0900
+
+
+Started GET "/assets/sample.self-a51cbf819c08a82da5f20b60ab0773bf38ccf5e6ed5b2871c12afc468bf4472d.js?body=1" for ::1 at 2015-07-07 01:07:59 +0900
+
+
+Started GET "/assets/samp.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-07 01:07:59 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-07 01:07:59 +0900
+
+
+Started POST "/sample/index" for ::1 at 2015-07-07 01:08:16 +0900
+Processing by SampleController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2vcIvpN0HJAS0Nhnq6h6Xi6FBuJuvc1tHKxcGF4lZpMqmYeLvBwglvlxgpXSy9xYMYFJepOTMxQ2ZyMzXOr9vQ==", "name"=>"hahaha", "age"=>"1", "mail"=>"asss@fgg.dd", "tel"=>""}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "samples" ("name", "age", "mail", "tel", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "hahaha"], ["age", 1], ["mail", "asss@fgg.dd"], ["tel", ""], ["created_at", "2015-07-06 16:08:16.480107"], ["updated_at", "2015-07-06 16:08:16.480107"]]
+  [1m[35m (216.0ms)[0m  commit transaction
+  [1m[36mSample Load (4.0ms)[0m  [1mSELECT "samples".* FROM "samples"[0m
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (20.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 416ms (Views: 192.0ms | ActiveRecord: 220.0ms)
+
+
+Started GET "/sample/update?id=9" for ::1 at 2015-07-07 01:08:21 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mSample Load (0.0ms)[0m  SELECT  "samples".* FROM "samples" WHERE "samples"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered sample/update.html.erb within layouts/mylayout (0.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 120ms (Views: 116.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sample/update" for ::1 at 2015-07-07 01:08:28 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5mGaMQ34SDaJAXgtQvcyAYFeehGZFpvMOw58SMdfODcWDxUEIpB0MGKgIt87lJQHnlo1iWQ4ZbURxQNjxZCjGQ==", "id"=>"9", "name"=>"hahaha", "age"=>"1", "mail"=>"asss@fgg.dd", "tel"=>"222"}
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT  "samples".* FROM "samples" WHERE "samples"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "samples" SET "tel" = ?, "updated_at" = ? WHERE "samples"."id" = ?[0m  [["tel", "222"], ["updated_at", "2015-07-06 16:08:28.700166"], ["id", 9]]
+  [1m[35m (180.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/sample/index
+Completed 302 Found in 189ms (ActiveRecord: 180.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 01:08:28 +0900
+Processing by SampleController#index as HTML
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT "samples".* FROM "samples"[0m
+  Rendered layouts/partials/_mydata.html.erb (4.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (12.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 192ms (Views: 188.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sample/update?id=8" for ::1 at 2015-07-07 01:08:34 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSample Load (0.0ms)[0m  SELECT  "samples".* FROM "samples" WHERE "samples"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered sample/update.html.erb within layouts/mylayout (0.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sample/update" for ::1 at 2015-07-07 01:08:38 +0900
+Processing by SampleController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UkaAt3LWTdI0MjSj/908CAVR4XLq86YDvhGfjG26GZSiKA+CXb5x1N+TblGGvpoOGlWu6hfdWHqU2uCnb3WCug==", "id"=>"8", "name"=>"ass", "age"=>"13", "mail"=>"ss", "tel"=>"ddf"}
+  [1m[36mSample Load (4.0ms)[0m  [1mSELECT  "samples".* FROM "samples" WHERE "samples"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "samples" SET "age" = ?, "updated_at" = ? WHERE "samples"."id" = ?[0m  [["age", 13], ["updated_at", "2015-07-06 16:08:38.796946"], ["id", 8]]
+  [1m[35m (108.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/sample/index
+Completed 302 Found in 124ms (ActiveRecord: 112.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 01:08:38 +0900
+Processing by SampleController#index as HTML
+  [1m[36mSample Load (4.0ms)[0m  [1mSELECT "samples".* FROM "samples"[0m
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (8.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 168ms (Views: 164.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 01:11:30 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples" WHERE "samples"."id" IN (2, 3, 8)
+  Rendered layouts/partials/_mydata.html.erb (4.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (12.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 316ms (Views: 284.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/samp.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-07 01:11:30 +0900
+
+
+Started GET "/assets/sample.self-00ceda1a85a5b4c5113296283ae64c39be22fa319cbd70c102efe7da8ee8cab1.css?body=1" for ::1 at 2015-07-07 01:11:30 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-07 01:11:30 +0900
+
+
+Started GET "/assets/sample.self-a51cbf819c08a82da5f20b60ab0773bf38ccf5e6ed5b2871c12afc468bf4472d.js?body=1" for ::1 at 2015-07-07 01:11:30 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 01:11:30 +0900
+
+
+Started GET "/assets/samp.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-07 01:11:30 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 01:11:30 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-07 01:11:30 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-07 01:11:30 +0900
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 01:11:44 +0900
+Processing by SampleController#index as HTML
+  [1m[36mSample Load (0.0ms)[0m  [1mSELECT "samples".* FROM "samples" WHERE "samples"."id" IN (2, 3, 7)[0m
+Completed 404 Not Found in 40ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Samples with 'id': (2, 3, 7) (found 2 results, but was looking for 3)):
+  app/controllers/sample_controller.rb:20:in `index'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (68.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (140.0ms)
+
+
+Started GET "/sample/index" for ::1 at 2015-07-07 01:12:02 +0900
+Processing by SampleController#index as HTML
+  [1m[35mSample Load (0.0ms)[0m  SELECT "samples".* FROM "samples" WHERE "samples"."id" IN (2, 3, 6)
+  Rendered layouts/partials/_mydata.html.erb (0.0ms)
+  Rendered sample/index.html.erb within layouts/mylayout (4.0ms)
+  Rendered layouts/partials/_myheader.html.erb (0.0ms)
+  Rendered layouts/partials/_myfooter.html.erb (0.0ms)
+Completed 200 OK in 156ms (Views: 132.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/samp.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-07 01:12:03 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-07 01:12:03 +0900
+
+
+Started GET "/assets/sample.self-00ceda1a85a5b4c5113296283ae64c39be22fa319cbd70c102efe7da8ee8cab1.css?body=1" for ::1 at 2015-07-07 01:12:03 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 01:12:03 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-07 01:12:03 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 01:12:03 +0900
+
+
+Started GET "/assets/sample.self-a51cbf819c08a82da5f20b60ab0773bf38ccf5e6ed5b2871c12afc468bf4472d.js?body=1" for ::1 at 2015-07-07 01:12:03 +0900
+
+
+Started GET "/assets/samp.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-07 01:12:03 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-07 01:12:03 +0900
